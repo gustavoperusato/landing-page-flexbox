@@ -24,6 +24,7 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -261,7 +262,7 @@ footer .footer a{
     z-index: 999999;
     background-color: #ffff;
     border-radius: 50%;
-    border: 2px solid #122a57;
+    border: 3px solid #122a57;
     width: 35px;
     height: 35px;
     line-height: 48px;
@@ -284,4 +285,50 @@ footer .footer a{
 }
 .scroll-top-wrapper i.fa {
     line-height: inherit;
+}
+
+/* mobile */
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
